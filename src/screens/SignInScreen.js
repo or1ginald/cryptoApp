@@ -15,7 +15,7 @@ export const SignInScreen = () => {
           {/* <Text style={styles.text}>SignInScreen</Text> */}
           {/* <View style={styles.homeIndicator} /> */}
           <View style={styles.logoContainer}>
-            <Text>CryptoShit</Text>
+            <Text style={styles.text}>CRYPTOSTEP</Text>
           </View>
           <View style={styles.signInContainer}>
             <CustomInput placeholderName={'Login'} />
@@ -42,6 +42,10 @@ const styles = StyleSheet.create({
   },
   logoContainer: {
     height: '50%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    // color: '#FFFFFF',
   },
   signInContainer: {
     height: '30%',
