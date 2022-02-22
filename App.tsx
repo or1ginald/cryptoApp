@@ -10,16 +10,9 @@
 
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import {NavigationContainer} from '@react-navigation/native';
-// import {StyleSheet} from 'react-native';
 import {SignInScreen} from './src/screens/SignInScreen';
 import PasswordScreen from './src/screens/PasswordScreen';
-// import HomeScreen from './src/screens/HomeScreen';
-// import EducationScreen from './src/screens/EducationScreen';
-// import EventsScreen from './src/screens/EventsScreen';
-// import DeFiScreen from './src/screens/DeFiScreen';
-// import ProfileScreen from './src/screens/ProfileScreen';
-import BottomTab from './src/components/BottomTab';
+import {NavigationContainer} from '@react-navigation/native';
 
 const App = () => {
   const Stack = createStackNavigator();
@@ -27,7 +20,7 @@ const App = () => {
     <>
       <NavigationContainer>
         <Stack.Navigator>
-          {true ? (
+          {
             <>
               <Stack.Screen
                 name="SignIn"
@@ -40,41 +33,32 @@ const App = () => {
                 options={{headerShown: false}}
               />
             </>
-          ) : (
-            <>
-              <Stack.Screen
-                name="Home"
-                component={BottomTab}
-                options={{headerShown: false}}
-              />
-              {/* <Stack.Screen
-                name="Education"
-                component={EducationScreen}
-                // options={{headerShown: false}}
-              />
-              <Stack.Screen
-                name="Events"
-                component={EventsScreen}
-                // options={{headerShown: false}}
-              />
-              <Stack.Screen
-                name="DeFi"
-                component={DeFiScreen}
-                // options={{headerShown: false}}
-              />
-              <Stack.Screen
-                name="Profile"
-                component={ProfileScreen}
-                // options={{headerShown: false}}
-              /> */}
-            </>
-          )}
+          }
         </Stack.Navigator>
       </NavigationContainer>
     </>
   );
 };
 
-// const styles = StyleSheet.create({});
+// const styles = StyleSheet.create({
+//   sectionContainer: {
+//     marginTop: 32,
+//     paddingHorizontal: 24,
+//     // fontFamily: 'Palanquin-Bold',
+//   },
+//   sectionTitle: {
+//     fontSize: 24,
+//     fontWeight: '600',
+//     fontFamily: 'Palanquin-Bold',
+//   },
+//   sectionDescription: {
+//     marginTop: 8,
+//     fontSize: 18,
+//     fontWeight: '700',
+//     fontFamily: 'Palanquin-Bold',
+//   },
+//   highlight: {
+//     fontWeight: '700',
+//   },
 
 export default App;

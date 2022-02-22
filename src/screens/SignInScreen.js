@@ -1,6 +1,6 @@
 import {ImageBackground, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import image from '../assets/backgrounds/Bg.png';
+import image from '../../assets/backgrounds/Bg.png';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import CustomButton from '../components/CustomButton';
 import CustomInput from '../components/CustomInput';
@@ -11,7 +11,7 @@ export const SignInScreen = () => {
       <SafeAreaView>
         <View style={styles.container}>
           <View style={styles.logoContainer}>
-            <Text style={styles.text}>CRYPTOSTEP</Text>
+            <Text style={styles.logoText}>CRYPTOSTEP</Text>
           </View>
           <View style={styles.signInContainer}>
             <CustomInput placeholderName={'Login'} />
@@ -50,6 +50,15 @@ const styles = StyleSheet.create({
   },
   text: {
     color: '#fff',
+    fontSize: 15,
+    fontWeight: '600',
+    fontFamily: 'Palanquin-Bold',
+  },
+  logoText: {
+    color: '#fff',
+    fontSize: 24,
+    fontWeight: '600',
+    fontFamily: 'Palanquin-Bold',
   },
   container: {
     height: '100%',

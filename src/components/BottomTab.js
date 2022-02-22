@@ -5,11 +5,11 @@ import EducationScreen from '../screens/EducationScreen';
 import EventsScreen from '../screens/EventsScreen';
 import HomeScreen from '../screens/HomeScreen';
 import ProfileScreen from '../screens/ProfileScreen';
-import HomeIcon from '../assets/icons/HomeIcon';
-import EducationIcon from '../assets/icons/EducationIcon';
-import CalendarIcon from '../assets/icons/CalendarIcon';
-import WalletIcon from '../assets/icons/WalletIcon';
-import UserIcon from '../assets/icons/UserIcon';
+import HomeIcon from '../../assets/icons/HomeIcon';
+import EducationIcon from '../../assets/icons/EducationIcon';
+import CalendarIcon from '../../assets/icons/CalendarIcon';
+import WalletIcon from '../../assets/icons/WalletIcon';
+import UserIcon from '../../assets/icons/UserIcon';
 const BottomTab = () => {
   const Tab = createBottomTabNavigator();
   return (
